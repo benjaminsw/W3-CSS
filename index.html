@@ -57,6 +57,12 @@
             <img src="img/about.jpg">
           </div>
           <div class="w3-col m7">
+            <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-left-align">
+            Open Section 1</button>
+
+            <div id="Demo1" class="w3-container w3-hide">
+              <p>Some text..</p>
+            </div>
             
           </div>
         </div>
@@ -64,7 +70,7 @@
     </section>  
 
     <script>
-      function myFunction(id) {
+      function accFunction(id) {
           var x = document.getElementById(id);
           if (x.className.indexOf("w3-show") == -1) {
               x.className += " w3-show";
